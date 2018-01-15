@@ -42,13 +42,10 @@ $payment->send();
 // get payment url
 $url = $payment->getUrl();
 ```
-
 Check payment result:
 ```php
 // somewere in result url handler...
 ...
-
-
 use wdwp\yandexmoney\Payment;
 
 $result = Payment::validate($_POST, 'RX29rXHxOsR0exsBs6Hvi'); //secret word
@@ -60,8 +57,7 @@ if ($result) {
 }
 ...
 ```
-
-Check payment on Success page:
+Success page:
 ```php
 ...
 echo "Thank you for your payment!";
