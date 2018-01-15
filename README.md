@@ -1,6 +1,5 @@
 # yandexmoney
 
-
 ## Installation
 
 Install this package through Composer. To your `composer.json` file, add:
@@ -37,8 +36,7 @@ echo $form;
 
 // redirect to payment url
 $payment->send();
-```
-```php
+
 // get payment url
 $url = $payment->getUrl();
 ```
