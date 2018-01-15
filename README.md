@@ -49,22 +49,6 @@ Check payment result:
 ...
 
 
-if ($payment->validateResult($_GET) {
-    $order = Orders::find($payment->getInvoiceId());
-
-    if ($payment->getSum() == $order->sum) {
-
-    }
-
-    // send answer
-    echo $payment->getSuccessAnswer(); // "OK1254487\n"
-}
-...
-```
-
-Check payment on Success page:
-```php
-...
 use wdwp\yandexmoney\Payment;
 
 $result = Payment::validate($_POST, 'RX29rXHxOsR0exsBs6Hvi'); //secret word
@@ -74,5 +58,12 @@ if ($result) {
     $order = Orders::find($result['label']);      
    
 }
+...
+```
+
+Check payment on Success page:
+```php
+...
+echo "Thank you for your payment!";
 ...
 ```
