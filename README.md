@@ -38,7 +38,7 @@ echo $form;
 // redirect to payment url
 $payment->send();
 ```
-
+```php
 // get payment url
 $url = $payment->getUrl();
 ```
