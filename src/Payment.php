@@ -95,9 +95,9 @@ class Payment
         ];
     }
     /**
-     * Adds payment name for payment history (optional).
+     * Adds shop name for payment history (optional).
      *
-     * @param string $str payment name
+     * @param string $str shop name
      *
      * @return Payment
      */
