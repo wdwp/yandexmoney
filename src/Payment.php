@@ -1,6 +1,6 @@
 <?php
 /**
- * Yandex money forms an buttons api
+ * Yandex money forms and buttons api
  *
  * PHP Version 5
  *
@@ -22,8 +22,8 @@ use Exception;
  * @package   Yandexmoney
  * @author    Yuri Haperski <wdwp@bk.ru>
  * @copyright 2018 wdwp (https://madesimple.su)
- * @license   MIT https://madesimple.su
- * @link      https://madesimple.su
+ * @license   http://opensource.org/licenses/MIT MIT License
+ * @link      http://github.com/wdwp/yandexmoney
  */
 class Payment
 {
@@ -203,7 +203,7 @@ class Payment
         return $this;
     }
     /**
-     * Create payment url.
+     * Creates payment url.
      *
      * @return string
      */
@@ -221,14 +221,14 @@ class Payment
         header('Location: ' . $this->getUrl());
     }
     /**
-     * Create payment form.
+     * Creates payment form.
      *
      * @param string $text  button text
      * @param string $class button class name
      *
      * @return string
      */
-    public function getForm($text = 'Оплатить', $class = 'button')
+    public function getForm($text = 'Pay', $class = 'button')
     {
         return '<form method="POST" action="' . $this->__url . '">
              <input type="hidden" name="receiver" value="' . $this->__params['receiver'] . '">
