@@ -21,7 +21,7 @@ $payment = new Payment(
     '4100163332366', 'Payment', 100.0, 'shop', 'AC'
 );
 
-$form = $payment->setFormcomment('Payment for some goods')
+$form = $payment->setFormcomment('Shop name')
     ->setDest('Payment for some goods')
     ->setLabel($order->id)
     ->setComment($order->comment)
