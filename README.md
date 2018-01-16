@@ -6,7 +6,7 @@ Install this package through Composer. To your `composer.json` file, add:
 ```js
 {
     "require": {
-        "wdwp/yandexmoney": "dev-master"
+        "wdwp/yandexmoney": "^1.0"
     }
 }
 ```
